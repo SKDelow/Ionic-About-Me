@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="ion-text-center">
+      Who am I?
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="ion-padding">
+    <h3 class="ion-text-center">Welcome to my resume application! <br>My name is Dakota.</h3>
+    <h3 class="ion-text-center">Lets start off by getting to know each other! What is your name?</h3>
+    <ion-item>
+      <ion-label position="floating">Enter your name:</ion-label>
+      <ion-input [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <h3 class="ion-text-center">After you have entered your name click the buttons below to learn more about me!</h3>
+
+    <!-- First Card Intrest/Skills -->
+    <ion-card>
+      <img src="../assets/imgs/skillsIntrest.jpeg " height='110' width='50' />
+      <ion-card-header>
+        <ion-card-title>Skills and Interests</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Learn about what type of skills I have and what interests me!
+      </ion-card-content>
+      <ion-button expand="full" color="primary" (click)="intSkillPage()">Click Here</ion-button>
+    </ion-card>
+    <!-- Second Card Job Experience -->
+    <ion-card>
+      <img src="../assets/imgs/experience.png " height='110' width='50' />
+      <ion-card-header>
+        <ion-card-title>Experience</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Learn about what type of job experience I have!
+      </ion-card-content>
+      <ion-button expand="full" color="primary" (click)="experPage()">Click Here</ion-button>
+    </ion-card>
+
+  </div>
+</ion-content>
